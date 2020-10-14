@@ -1,0 +1,74 @@
+/* 全体 */
+.skillWrapper {
+  padding: 100px 0 100px 0;
+  margin: 0 auto;
+  height: 700px;
+}
+.container {
+  padding: 0 100px 0 100px;
+  text-align: center;
+}
+.container h1 {
+  letter-spacing: 5px;
+  font-size: 40px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.container h4 {
+  margin-block-start: 0;
+  margin-block-end: 25px;
+  font-weight: normal;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill {
+  float: left;
+  flex: auto;
+  width: 33%;
+  height: 250px;
+  opacity: 0.8;
+}
+.skill p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 10px 0;
+}
+.skill .disc {
+  margin: 10px 0;
+}
+
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 50px;
+  }
+  .skillWrapper {
+    height: 850px;
+  }
+}
+
+/* スマートフォン向けレイアウト */
+@media (max-width: 670px) {
+  .container h1 {
+    letter-spacing: 2px;
+    font-size: 22px;
+  }
+  .container h4 {
+    font-size: 12px;
+  }
+  .skillWrapper {
+    height: 1000px;
+  }
+  .container h4 {
+    margin-block-end: 50px;
+  }
+  .skill {
+    width: 50%;
+    height: 250px;
+  }
+  .disc {
+    font-size: 12px;
+  }
+}
